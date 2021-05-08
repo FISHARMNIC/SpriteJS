@@ -1,8 +1,8 @@
 # SpriteJS
 #### A weirdly-made browserJS 2d game library!
 ---
-```
------ Setting up Your Canvas -----
+
+###### Setting up Your Canvas
 
 || CanvasUpdateType = type ||
 
@@ -42,7 +42,7 @@ EXPLANATION: invertedY makes y+10 go up instead of down, like on normal canvas
 - size: the size of the canvas as a square
 - speed: the autorender speed
 
------ Creating + Editing Sprites -----
+###### Creating + Editing Sprites
 
 || NewSprite(name,color,size) ||
 
@@ -103,7 +103,7 @@ SpriteSource()
 - DESCRIPTION: deletes the sprite
 - name: the name of the sprite
 
------ Pulling Sprite's Values + Getters -----
+###### Pulling Sprite's Values + Getters
 
 - sprites[name]["x"]: get the sprites x
 - sprites[name]["y"]: get the sprites y
@@ -111,11 +111,11 @@ SpriteSource()
 - sprites[name]["size"]: get the sprites size
 - observers[.key]: boolean if the key is pressed, see <a href="https://www.freecodecamp.org/news/javascript-keycode-list-keypress-event-key-codes/">this</a> for help
 
------ Running Your Code -----
+###### Running Your Code
   
 - function main(): Where looped code that runs once and waits depending on CanvasUpdateTime
 
------ Tips and tricks -----
+###### Tips and tricks
 
 - cloning is not yet added, but you can do something like:
 
@@ -126,11 +126,11 @@ var cid = 0
 Newsprite("dummy","circle")
 
 function main() {
-  Newsprite(`dummy${cid}`,"circle")
+  Newsprite(\`dummy${cid}\`,"circle")
   cid += 1
 }
 
------ Example Code With Comments -----
+###### Example Code With Comments
 
 CanvasUpdateType = "autorender"  // set render updater
 CanvasSpeed = 100                // set render speed
@@ -164,4 +164,3 @@ function main() { // where the looping code is ran
   }
 
 }
-```
